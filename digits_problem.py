@@ -143,6 +143,7 @@ def choose_em():
 
 
 def choose_pca():
+    # paste the printed result in a txt file and import into an datasheet to convert into an accumulated histogram graph
     variance_explained_ratios = []
     for i in range(1, 65):
         pca = PCA(n_components=i).fit(data)
@@ -521,9 +522,6 @@ def em_and_lda_optimal_accuracy():
 # em_and_ica_2D_graph()
 # em_and_rca_2D_graph()
 # em_and_lda_2D_graph()
-# TODO: change values of the reduction algorithms to the ones given by the choose functions in the optimal accuracy
-#  functions and measure scores of the resulting clusterings (when n_clusters = 2 for tumor problem and 10 for digit
-#  problem) => compare to measure how better the reduction is
 # k_means_and_pca_optimal_accuracy()
 # k_means_and_ica_optimal_accuracy()
 # k_means_and_rca_optimal_accuracy()
