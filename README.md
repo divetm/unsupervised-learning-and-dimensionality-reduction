@@ -26,7 +26,7 @@ What they do is:
 - plot 2D representations of the clustering and reduction results on both datasets (reduction to 2 dimensions done by PCA/ICA/RCA/LDA and then clustering done by K-means/EM)
 - compute the accuracy of the clustering compared to the labels given in the original datasets.
 
-Additionally, n ```tumor_problem.py```, a Neural Network learner (the one defined in the first assignment) is tested on the reduced/clustered tumor classification dataset. To do so, the script:
+Additionally, in ```tumor_problem.py```, a Neural Network learner (the one defined in the first assignment) is tested on the reduced/clustered tumor classification dataset. To do so, the script:
 - splits the data into training and testing sets
 - reduces the training dataset (with PCA/ICA/RCA/LDA), trains the Neural Network on the reduced data and tests it with the testing reduced dataset
 - clusters the training dataset (with K-means/EM), trains the Neural Network on the data using the clusters as an added feature and tests it with the testing dataset
