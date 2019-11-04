@@ -30,3 +30,5 @@ Additionally, in ```tumor_problem.py```, a Neural Network learner (the one defin
 - splits the data into training and testing sets
 - reduces the training dataset (with PCA/ICA/RCA/LDA), trains the Neural Network on the reduced data and tests it with the testing reduced dataset
 - clusters the training dataset (with K-means/EM), trains the Neural Network on the data using the clusters as an added feature and tests it with the testing dataset
+
+In these files you will find the definition of the functions needed to compute the above. At the bottom of the files you will find all of the functions called as they should (this part has been commented out on both files to avoid running unwanted functions when the file is ran, simply comment them out to test the functions).
